@@ -27,7 +27,11 @@ export default function TopBar() {
             <div className="topBar-Wrapper_right-IconContainer">
               <SettingsIcon />
             </div>
-            <img src="./../public/images/leaf.webp" alt="" />
+            <img
+              src="./../public/images/leaf.webp"
+              alt="avatar"
+              className="topBar-Wrapper_right-avatar"
+            />
           </div>
         </div>
       </div>
