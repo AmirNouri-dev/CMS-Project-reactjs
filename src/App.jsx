@@ -1,16 +1,14 @@
-import { useState } from "react";
-import { Typography } from "@mui/material";
-import PersonIcon from "@mui/icons-material/Person";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { DataGrid } from "@mui/x-data-grid";
-import DeleteIcon from "@mui/icons-material/Delete";
-import EditIcon from "@mui/icons-material/Edit";
+import React, { useState } from "react";
+import routes from "./routes";
+import { useRoutes } from "react-router-dom";
+import TopBar from "./components/topbar/TopBar";
 
-import "./App.css";
-
-function App() {
-  return <div></div>;
+export default function App() {
+  const router = useRoutes(routes);
+  return (
+    <>
+      <TopBar />
+      {router}
+    </>
+  );
 }
-
-export default App;
