@@ -44,19 +44,19 @@ export default function SideBar() {
         <div className="sidebar-wrapper-menu">
           <h3 className="sidebar-wrapper-menu-title">Quick Start</h3>
           <ul className="sidebar-wrapper-menu_list">
-            <Link to="/users">
+            <Link to="/users" className="link">
               <li className="sidebar-wrapper-menu_list_item active">
                 <PermIdentity className="sideBarIcon" />
                 Users
               </li>
             </Link>
-            <Link to="/newUser">
+            <Link to="/newUser" className="link">
               <li className="sidebar-wrapper-menu_list_item">
                 <PersonAddAlt1Outlined className="sideBarIcon" />
                 New User
               </li>
             </Link>
-            <Link to="/products">
+            <Link to="/products" className="link">
               <li className="sidebar-wrapper-menu_list_item">
                 <Storefront className="sideBarIcon" />
                 Products
