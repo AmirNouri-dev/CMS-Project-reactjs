@@ -52,12 +52,29 @@ export default function SideBar() {
               Products
             </li>
             <li className="sidebar-wrapper-menu_list_item">
-              <WorkOutline className="sideBarIcon" />
+              <AttachMoney className="sideBarIcon" />
               Transactions
             </li>
             <li className="sidebar-wrapper-menu_list_item">
-              <Report className="sideBarIcon" />
+              <BarChart className="sideBarIcon" />
               Reports
+            </li>
+          </ul>
+        </div>
+        <div className="sidebar-wrapper-menu">
+          <h3 className="sidebar-wrapper-menu-title">Notifications</h3>
+          <ul className="sidebar-wrapper-menu_list">
+            <li className="sidebar-wrapper-menu_list_item active">
+              <MailOutline className="sideBarIcon" />
+              Mail
+            </li>
+            <li className="sidebar-wrapper-menu_list_item">
+              <DynamicFeed className="sideBarIcon" />
+              Feedback
+            </li>
+            <li className="sidebar-wrapper-menu_list_item">
+              <ChatBubbleOutline className="sideBarIcon" />
+              Messages
             </li>
           </ul>
         </div>
