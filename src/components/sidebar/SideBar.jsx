@@ -78,6 +78,23 @@ export default function SideBar() {
             </li>
           </ul>
         </div>
+        <div className="sidebar-wrapper-menu">
+          <h3 className="sidebar-wrapper-menu-title">Staff</h3>
+          <ul className="sidebar-wrapper-menu_list">
+            <li className="sidebar-wrapper-menu_list_item active">
+              <WorkOutline className="sideBarIcon" />
+              Manage
+            </li>
+            <li className="sidebar-wrapper-menu_list_item">
+              <Timeline className="sideBarIcon" />
+              Analytics
+            </li>
+            <li className="sidebar-wrapper-menu_list_item">
+              <Report className="sideBarIcon" />
+              Reports
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
