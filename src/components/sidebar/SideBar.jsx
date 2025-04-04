@@ -13,8 +13,9 @@ import {
   ChatBubbleOutline,
   WorkOutline,
   Report,
+  PersonAddAlt1Outlined,
 } from "@mui/icons-material";
-import PersonAddOutlinedIcon from "@mui/icons-material/PersonAddOutlined";
+
 export default function SideBar() {
   return (
     <div className="sidebar">
@@ -44,7 +45,7 @@ export default function SideBar() {
               Users
             </li>
             <li className="sidebar-wrapper-menu_list_item">
-              <PersonAddOutlinedIcon className="sideBarIcon" />
+              <PersonAddAlt1Outlined className="sideBarIcon" />
               New User
             </li>
             <li className="sidebar-wrapper-menu_list_item">
