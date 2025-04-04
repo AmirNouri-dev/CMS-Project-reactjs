@@ -28,7 +28,7 @@ export default function TopBar() {
               <SettingsIcon />
             </div>
             <img
-              src="./../public/images/leaf.webp"
+              src="./../public/images/avatar4.jfif"
               alt="avatar"
               className="topBar-Wrapper_right-avatar"
             />
