@@ -4,6 +4,7 @@ import {
   LineStyle,
   Timeline,
   TrendingUp,
+  PersonAddAlt1Outlined,
   PermIdentity,
   Storefront,
   AttachMoney,
@@ -13,8 +14,9 @@ import {
   ChatBubbleOutline,
   WorkOutline,
   Report,
-  PersonAddAlt1Outlined,
 } from "@mui/icons-material";
+
+import { Link } from "react-router-dom";
 
 export default function SideBar() {
   return (
@@ -23,10 +25,12 @@ export default function SideBar() {
         <div className="sidebar-wrapper-menu">
           <h3 className="sidebar-wrapper-menu-title">Dashboard</h3>
           <ul className="sidebar-wrapper-menu_list">
-            <li className="sidebar-wrapper-menu_list_item active">
-              <LineStyle className="sideBarIcon" />
-              Home
-            </li>
+            <Link to="/" className="link">
+              <li className="sidebar-wrapper-menu_list_item active">
+                <LineStyle className="sideBarIcon" />
+                Home
+              </li>
+            </Link>
             <li className="sidebar-wrapper-menu_list_item">
               <Timeline className="sideBarIcon" />
               Analytics
@@ -40,18 +44,25 @@ export default function SideBar() {
         <div className="sidebar-wrapper-menu">
           <h3 className="sidebar-wrapper-menu-title">Quick Start</h3>
           <ul className="sidebar-wrapper-menu_list">
-            <li className="sidebar-wrapper-menu_list_item active">
-              <PermIdentity className="sideBarIcon" />
-              Users
-            </li>
-            <li className="sidebar-wrapper-menu_list_item">
-              <PersonAddAlt1Outlined className="sideBarIcon" />
-              New User
-            </li>
-            <li className="sidebar-wrapper-menu_list_item">
-              <Storefront className="sideBarIcon" />
-              Products
-            </li>
+            <Link to="/users">
+              <li className="sidebar-wrapper-menu_list_item active">
+                <PermIdentity className="sideBarIcon" />
+                Users
+              </li>
+            </Link>
+            <Link to="/newUser">
+              <li className="sidebar-wrapper-menu_list_item">
+                <PersonAddAlt1Outlined className="sideBarIcon" />
+                New User
+              </li>
+            </Link>
+            <Link to="/products">
+              <li className="sidebar-wrapper-menu_list_item">
+                <Storefront className="sideBarIcon" />
+                Products
+              </li>
+            </Link>
+
             <li className="sidebar-wrapper-menu_list_item">
               <AttachMoney className="sideBarIcon" />
               Transactions
