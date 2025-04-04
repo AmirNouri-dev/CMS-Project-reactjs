@@ -4,7 +4,7 @@ import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 export default function WidgetSm() {
   return (
     <div className="widgetSm">
-      <span className="widgetSm_title"></span>
+      <span className="widgetSm_title">New Join Member</span>
       <ul className="widgetSm_List">
         <li className="widgetSm_list-item">
           <img
