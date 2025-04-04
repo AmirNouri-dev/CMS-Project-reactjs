@@ -16,6 +16,28 @@ export default function Features() {
         </div>
         <span className="featureItem-desc">Compared to last month</span>
       </div>
+      <div className="featureItem">
+        <div className="featureItem-title">Sales</div>
+        <div className="featureItem-container">
+          <span className="featureItem-container_money">$2,410</span>
+          <span className="featureItem-container_rate">
+            -1.4
+            <ArrowDownwardOutlinedIcon className="featureItem-container_rate_icon negative" />
+          </span>
+        </div>
+        <span className="featureItem-desc">Compared to last month</span>
+      </div>
+      <div className="featureItem">
+        <div className="featureItem-title">Cost</div>
+        <div className="featureItem-container">
+          <span className="featureItem-container_money">$2,410</span>
+          <span className="featureItem-container_rate">
+            +1.4
+            <ArrowUpwardOutlinedIcon className="featureItem-container_rate_icon " />
+          </span>
+        </div>
+        <span className="featureItem-desc">Compared to last month</span>
+      </div>
     </div>
   );
 }
