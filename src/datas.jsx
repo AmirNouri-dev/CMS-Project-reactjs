@@ -13,4 +13,46 @@ const xAxisData = [
   { name: "Dec", sale: 112_112 },
 ];
 
-export default xAxisData;
+const sendData = (datas, tableName) => {
+  datas.forEach((data) => {
+    fetch(
+      `https://cms-panel-54050-default-rtdb.firebaseio.com/${tableName}.json`,
+      {
+        method: "POST",
+        body: JSON.stringify(data),
+      }
+    ).then((res) => console.log(res));
+    // .then((info) => console.log(info));
+  });
+};
+
+const newJoinUsers = [
+  {
+    id: 1,
+    name: "AmirHossein Nouri",
+    title: "Web developer",
+    img: "./public/images/avatar.png",
+  },
+  {
+    id: 2,
+    name: "Ali Ahmadi",
+    title: "backEnd developer",
+    img: "./public/images/avatar2.jfif",
+  },
+  {
+    id: 3,
+    name: "Hasan Azizi",
+    title: "SEO Eng",
+    img: "./public/images/avatar3.jfif",
+  },
+  {
+    id: 4,
+    name: "Maral Shams",
+    title: "Designer",
+    img: "./public/images/avatar5.jfif",
+  },
+];
+export { xAxisData, newJoinUsers };
+
+sendData(newJoinUsers, "newJoinUsers");
+sendData(xAxisData, "xAxisData");

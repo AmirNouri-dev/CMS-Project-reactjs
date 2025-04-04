@@ -1,7 +1,7 @@
 import React from "react";
 import Features from "../../components/features/Features";
 import Chart from "../../components/chart/Chart";
-import xAxisData from "./../../datas";
+import { xAxisData } from "../../datas";
 import WidgetSm from "../../components/widgetSm/WidgetSm";
 
 import "./Home.css";
