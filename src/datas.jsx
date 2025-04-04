@@ -12,3 +12,5 @@ const xAxisData = [
   { name: "Nov", sale: 66_666 },
   { name: "Dec", sale: 112_112 },
 ];
+
+export default xAxisData;
