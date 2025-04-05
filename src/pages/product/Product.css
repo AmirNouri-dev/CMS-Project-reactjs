@@ -1,0 +1,25 @@
+.product {
+  flex: 4;
+  padding: 20px;
+  margin: 0 10px;
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+}
+.product-Title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-Title_add-btn {
+  border: none;
+  font-size: 16px;
+  padding: 4px;
+  width: 80px;
+  color: #fff;
+  background-color: teal;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
