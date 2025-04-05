@@ -171,6 +171,12 @@ const transActions = [
   },
 ];
 
+const productsSalesChartData = [
+  { name: "Feb", sales: 4500 },
+  { name: "Apr", sales: 3000 },
+  { name: "Jun", sales: 4800 },
+  { name: "Oct", sales: 5500 },
+];
 // const xAxisData = [
 //   { name: "Jan", sale: 112_000 },
 //   { name: "Feb", sale: 99_000 },
@@ -212,7 +218,7 @@ const transActions = [
 //   },
 // ];
 // export { xAxisData, newJoinUsers };
-export { transActions, userRows, products };
+export { transActions, userRows, products, productsSalesChartData };
 
 const sendData = (datas, tableName) => {
   const isDataSent = localStorage.getItem(`isDataSent_${tableName}`);
