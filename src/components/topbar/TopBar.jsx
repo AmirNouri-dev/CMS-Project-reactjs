@@ -9,7 +9,7 @@ export default function TopBar() {
       <div className="topBar">
         <div className="topBar-Wrapper">
           <div className="topBar-Wrapper_left">
-            <span className="logo">AMIR HOSSEIN</span>
+            <span className="logo">CMS PANEL</span>
           </div>
           <div className="topBar-Wrapper_right">
             <div className="topBar-Wrapper_right-IconContainer">

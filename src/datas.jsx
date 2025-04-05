@@ -104,6 +104,6 @@ const sendData = (datas, tableName) => {
 };
 
 // useEffect(() => {
-sendData(newJoinUsers, "newJoinUsers");
-sendData(xAxisData, "xAxisData");
+// sendData(newJoinUsers, "newJoinUsers");
+// sendData(xAxisData, "xAxisData");
 // }, []);
