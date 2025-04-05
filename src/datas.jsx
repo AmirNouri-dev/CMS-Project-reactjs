@@ -1,5 +1,40 @@
 import { useEffect } from "react";
 
+const transActions = [
+  {
+    id: 1,
+    customer: "Ali Davoodi",
+    amount: 246,
+    img: "./public/images/avatar.png",
+    status: "Pending",
+    date: "20 Feb 2025",
+  },
+  {
+    id: 2,
+    customer: "Ahmad Davoodi",
+    amount: 333,
+    img: "./public/images/avatar.png",
+    status: "Declined",
+    date: "20 Jan 2025",
+  },
+  {
+    id: 3,
+    customer: "Bahram Amiri",
+    amount: 542,
+    img: "./public/images/avatar.png",
+    status: "Approved",
+    date: "20 Oct 2024",
+  },
+  {
+    id: 4,
+    customer: "Koroush Daneshvar",
+    amount: 89,
+    img: "./public/images/avatar.png",
+    status: "Approved",
+    date: "15 Sep 2024",
+  },
+];
+
 // const xAxisData = [
 //   { name: "Jan", sale: 112_000 },
 //   { name: "Feb", sale: 99_000 },
@@ -41,6 +76,7 @@ import { useEffect } from "react";
 //   },
 // ];
 // export { xAxisData, newJoinUsers };
+export { transActions };
 
 const sendData = (datas, tableName) => {
   const isDataSent = localStorage.getItem(`isDataSent_${tableName}`);

@@ -43,7 +43,7 @@ export default function WidgetLg() {
           <td className="widgetLg-date">20 March 2025</td>
           <td className="widgetLg-amount">$199.99</td>
           <td className="widgetLg-status">
-            <Button type="Decline" />
+            <Button type="Declined" />
           </td>
         </tr>
         {/* pendingbtn */}
