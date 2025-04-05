@@ -1,9 +1,16 @@
 import React from "react";
 import "./Product.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { productsSalesChartData } from "./../../datas";
 import Chart from "./../../components/chart/Chart";
+import { products } from "./../../datas";
+
 export default function Product() {
+  const URLParams = useParams();
+  const selectedProduct = products.find(
+    (item) => item.id == URLParams.productID
+  );
+  console.log(selectedProduct);
   return (
     <div className="product">
       <div className="product-Title_container">
@@ -24,20 +31,26 @@ export default function Product() {
         <div className="product-top_right">
           <div className="product-Info_top">
             <img
-              src="./../../public/images/laptop.jfif"
+              src={selectedProduct.avatar}
               alt=""
               className="product-Info_top-img"
             />
-            <span className="product-Info_top-title">Dell Laptop</span>
+            <span className="product-Info_top-title">
+              {selectedProduct.title}
+            </span>
           </div>
           <div className="product-Info_bottom">
             <div className="product-Info_item">
               <div className="product-Info_item-key">ID:</div>
-              <div className="product-Info_item-value">132</div>
+              <div className="product-Info_item-value">
+                {selectedProduct.id}
+              </div>
             </div>
             <div className="product-Info_item">
               <div className="product-Info_item-key">Name:</div>
-              <div className="product-Info_item-value">Dell</div>
+              <div className="product-Info_item-value">
+                {selectedProduct.title}
+              </div>
             </div>
             <div className="product-Info_item">
               <div className="product-Info_item-key">Sales:</div>
@@ -49,7 +62,9 @@ export default function Product() {
             </div>
             <div className="product-Info_item">
               <div className="product-Info_item-key">In Stock:</div>
-              <div className="product-Info_item-value">No</div>
+              <div className="product-Info_item-value">
+                {selectedProduct.inStock}
+              </div>
             </div>
           </div>
         </div>

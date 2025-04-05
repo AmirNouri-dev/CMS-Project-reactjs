@@ -42,7 +42,8 @@ export default function UsersList() {
         );
       },
     },
-    { field: "price", headerName: "Price", width: 220 },
+    { field: "price", headerName: "Price", width: 160 },
+    { field: "inStock", headerName: "In Stock", width: 180 },
 
     {
       field: "action",
