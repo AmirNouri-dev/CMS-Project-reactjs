@@ -1,7 +1,7 @@
 .product {
   flex: 4;
   padding: 20px;
-  margin: 0 10px;
+  margin: 0 20px;
   box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
 }
 .product-Title_container {
