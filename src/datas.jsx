@@ -1,35 +1,55 @@
 import { useEffect } from "react";
 const products = [
-  { id: 1, title: "ASUS", avatar: "./public/images/laptop.jfif", price: 890 },
-  { id: 2, title: "HP", avatar: "./public/images/laptop.jfif", price: 990 },
-  { id: 3, title: "DELL", avatar: "./public/images/laptop.jfif", price: 1120 },
-  { id: 4, title: "LENOVO", avatar: "./public/images/laptop.jfif", price: 890 },
+  {
+    id: 1,
+    title: "ASUS",
+    avatar: "./public/images/laptop.jfif",
+    price: "$ 890",
+  },
+  { id: 2, title: "HP", avatar: "./public/images/laptop.jfif", price: "$ 990" },
+  {
+    id: 3,
+    title: "DELL",
+    avatar: "./public/images/laptop.jfif",
+    price: "$ 1120",
+  },
+  {
+    id: 4,
+    title: "LENOVO",
+    avatar: "./public/images/laptop.jfif",
+    price: "$ 890",
+  },
   {
     id: 5,
     title: "IPHONE 11",
     avatar: "./public/images/iphone11.jfif",
-    price: 390,
+    price: "$ 390",
   },
   {
     id: 6,
     title: "IPHONE 13",
     avatar: "./public/images/iphone13.jfif",
-    price: 490,
+    price: "$ 490",
   },
   {
     id: 7,
     title: "Samsung A55",
     avatar: "./public/images/samsungA55.jfif",
-    price: 299,
+    price: "$ 299",
   },
-  { id: 8, title: "Xiaomi", avatar: "./public/images/xiaomi.jfif", price: 259 },
-  { id: 9, title: "PS4", avatar: "./public/images/ps4.jfif", price: 999 },
-  { id: 10, title: "PS5", avatar: "./public/images/ps5.jfif", price: 1199 },
+  {
+    id: 8,
+    title: "Xiaomi",
+    avatar: "./public/images/xiaomi.jfif",
+    price: "$ 259",
+  },
+  { id: 9, title: "PS4", avatar: "./public/images/ps4.jfif", price: "$ 999" },
+  { id: 10, title: "PS5", avatar: "./public/images/ps5.jfif", price: "$ 1199" },
   {
     id: 11,
     title: "XBOX-One",
     avatar: "./public/images/xboxOne.jfif",
-    price: 890,
+    price: "$ 890",
   },
 ];
 
@@ -192,7 +212,7 @@ const transActions = [
 //   },
 // ];
 // export { xAxisData, newJoinUsers };
-export { transActions, userRows };
+export { transActions, userRows, products };
 
 const sendData = (datas, tableName) => {
   const isDataSent = localStorage.getItem(`isDataSent_${tableName}`);
