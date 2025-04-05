@@ -1,0 +1,42 @@
+.userList {
+  flex: 4;
+  /* padding: 20px; */
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+}
+.userList-dataGrid {
+  padding: 20px;
+}
+.userList-User {
+  display: flex;
+  align-items: center;
+}
+.userList-User_img {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.userList-User_action {
+  display: flex;
+  align-items: center;
+}
+.userList-User-edit-btn {
+  border: none;
+  padding: 4px 14px;
+  color: #fff;
+  margin-right: 20px;
+  background-color: #3bb077;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.userList-User-delete-btn {
+  color: red;
+  cursor: pointer;
+}
