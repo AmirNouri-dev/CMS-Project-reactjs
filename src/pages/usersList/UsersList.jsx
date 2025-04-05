@@ -8,7 +8,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 export default function UsersList() {
   const [userDatas, setUserDatas] = useState(userRows);
   const [paginationModel, setPaginationModel] = useState({
-    pageSize: 3,
+    pageSize: 4,
     page: 0,
   });
   function removeUser(userID) {
@@ -28,7 +28,7 @@ export default function UsersList() {
       width: 200,
       renderCell: (params) => {
         return (
-          <Link to="/" className="link">
+          <Link to={`/user/${params.row.id}`} className="link">
             <div className="userList-User">
               <img
                 src={params.row.avatar}
@@ -71,8 +71,7 @@ export default function UsersList() {
         columns={columns}
         paginationModel={paginationModel}
         onPaginationModelChange={setPaginationModel}
-        pageSizeOptions={[2, 3, 5, 10]}
-        row
+        pageSizeOptions={[2, 4, 5, 10]}
       />
     </div>
   );
