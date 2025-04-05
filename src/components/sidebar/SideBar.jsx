@@ -45,7 +45,7 @@ export default function SideBar() {
           <h3 className="sidebar-wrapper-menu-title">Quick Start</h3>
           <ul className="sidebar-wrapper-menu_list">
             <Link to="/users" className="link">
-              <li className="sidebar-wrapper-menu_list_item active">
+              <li className="sidebar-wrapper-menu_list_item ">
                 <PermIdentity className="sideBarIcon" />
                 Users
               </li>
@@ -76,7 +76,7 @@ export default function SideBar() {
         <div className="sidebar-wrapper-menu">
           <h3 className="sidebar-wrapper-menu-title">Notifications</h3>
           <ul className="sidebar-wrapper-menu_list">
-            <li className="sidebar-wrapper-menu_list_item active">
+            <li className="sidebar-wrapper-menu_list_item ">
               <MailOutline className="sideBarIcon" />
               Mail
             </li>
@@ -93,7 +93,7 @@ export default function SideBar() {
         <div className="sidebar-wrapper-menu">
           <h3 className="sidebar-wrapper-menu-title">Staff</h3>
           <ul className="sidebar-wrapper-menu_list">
-            <li className="sidebar-wrapper-menu_list_item active">
+            <li className="sidebar-wrapper-menu_list_item ">
               <WorkOutline className="sideBarIcon" />
               Manage
             </li>
