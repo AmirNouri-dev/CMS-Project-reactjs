@@ -4,6 +4,7 @@ import Chart from "../../components/chart/Chart";
 import { useState, useEffect } from "react";
 // import { xAxisData } from "../../datas";
 import WidgetSm from "../../components/widgetSm/WidgetSm";
+import WidgetLg from "../../components/widgetLg/WidgetLg";
 
 import "./Home.css";
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
       />
       <div className="home_widgets">
         <WidgetSm />
+        <WidgetLg />
       </div>
     </div>
   );
