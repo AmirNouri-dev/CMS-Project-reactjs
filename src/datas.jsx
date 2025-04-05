@@ -1,5 +1,88 @@
 import { useEffect } from "react";
 
+const userRows = [
+  {
+    id: 1,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 2,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 3,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 4,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 5,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 6,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 7,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 8,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 9,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+  {
+    id: 10,
+    userName: "John Doe",
+    avatar: "./public/images/avatar.png",
+    status: "active",
+    transAction: "$129.52",
+    email: "example@yahoo.com",
+  },
+];
+
 const transActions = [
   {
     id: 1,
@@ -76,7 +159,7 @@ const transActions = [
 //   },
 // ];
 // export { xAxisData, newJoinUsers };
-export { transActions };
+export { transActions, userRows };
 
 const sendData = (datas, tableName) => {
   const isDataSent = localStorage.getItem(`isDataSent_${tableName}`);
