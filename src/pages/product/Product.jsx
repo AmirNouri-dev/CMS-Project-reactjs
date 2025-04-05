@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { productsSalesChartData } from "./../../datas";
 import Chart from "./../../components/chart/Chart";
 import { products } from "./../../datas";
-
+import { Publish } from "@mui/icons-material";
 export default function Product() {
   const URLParams = useParams();
   const selectedProduct = products.find(
@@ -68,6 +68,44 @@ export default function Product() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="product-bottom">
+        <form className="product-form">
+          <div className="product-form_left">
+            <label>Product Name</label>
+            <input
+              type="text"
+              placeholder="laptop"
+              className="product-form_left-input"
+            />
+            <label>In Stock</label>
+            <select id="inStock">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+
+            <label>Active</label>
+            <select id="active">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div className="product-form_right">
+            <div className="product-uploader">
+              <img
+                src="./../../public/images/laptop.jfif"
+                alt="uploader"
+                className="product-uploader-img"
+              />
+              <label>
+                <Publish />
+              </label>
+              <input type="file" style={{ display: "none" }} />
+            </div>
+
+            <button className="product-uploader-btn">Upload(Edit)</button>
+          </div>
+        </form>
       </div>
     </div>
   );
