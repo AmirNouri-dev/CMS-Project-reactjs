@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost:5173/signin.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./MAC Burger(React)_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/src/assets/images/lgo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAC Burger(React)</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/index.css">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(/src/assets/fonts/Poppins-Regular.woff) format("woff"),
+    url(/src/assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
+body {
+  font-family: poppins;
+  /* padding-bottom: 10rem; */
+}
+
+:root {
+  --color-C90000: #c90000;
+  --color-323232: #323232;
+  --color-7D7C7C: #7d7c7c;
+  --color-FFC300: #ffc300;
+  --color-F1F1F1: #f1f1f1;
+  --color-504F4F: #504f4f;
+  --color-FFE252: #ffe252;
+  --color-323232: #323232;
+  --color-FFF6A3: #fff6a3;
+  --color-E3E3E3: #e3e3e3;
+  --color-FFFDE6: #fffde6;
+}
+img {
+  width: 100%;
+}
+.curser_pointer {
+  cursor: pointer;
+}
+/*media*/
+@media only screen and (min-width: 1201px) {
+  .sale_item_container {
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .search_location_container h4 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .food_order_deliver {
+    top: -4rem;
+    left: -10rem;
+  }
+  .nav_icons {
+    display: block;
+  }
+  .main_navigation {
+    grid-template-columns: repeat(3, auto);
+  }
+  .nav_menu {
+    position: fixed;
+    padding: 1rem;
+    background-color: var(--color-C90000);
+    color: #fff;
+    top: 0;
+    z-index: 1;
+    left: -16rem;
+    bottom: 0;
+    width: 16rem;
+    transition: all 300ms ease-in;
+    border-radius: 10px;
+  }
+  .nav_menu_items {
+    flex-direction: column;
+  }
+  .nav_menu_link {
+    color: var(--color-F1F1F1);
+  }
+  .nav_menu_link:hover {
+    color: var(--color-FFE252);
+    font-size: 1.2rem;
+    text-shadow: -1px -1px #fff;
+  }
+  .nav_menu_item {
+    padding: 1rem 2rem;
+  }
+  .main_navigation {
+    display: grid;
+  }
+  .nav_icon {
+    display: block;
+    justify-self: center;
+  }
+  .nav_buttons {
+    justify-self: center;
+  }
+  .menu_foods_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sale_item_container {
+    margin: 0 auto;
+  }
+  .main_header_left h1 {
+    font-size: 2rem;
+    width: 230px;
+    margin-top: 3rem;
+    line-height: 48px;
+  }
+  .main_header {
+    margin-top: 5rem;
+  }
+  /* .main_header_right_img_container {
+      width: 370px;
+    } */
+
+  .img_mobile_app {
+    grid-row: 2;
+    grid-column: 1 span;
+    width: 120%;
+  }
+  .img_mobile_app img {
+    transform: none;
+    top: 10px;
+    left: 80px;
+    position: relative;
+  }
+  .content_mobile_app {
+    grid-row: 1;
+    grid-column: 2 span;
+  }
+  .content_mobile_app h4 {
+    font-size: 36px;
+    max-width: 80%;
+  }
+  .content_mobile_app h6 {
+    font-size: 20px;
+  }
+  .content_mobile_app p {
+    font-size: 16px;
+    max-width: 80%;
+  }
+  /*serach loc*/
+
+  .search_location_container img {
+    position: absolute;
+    max-width: 110px;
+  }
+  .search_location_container form {
+    width: 120%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .main_header {
+    grid-template-columns: 100%;
+  }
+  .menu_foods_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu_food_container {
+    margin: 0 auto;
+  }
+  .main_header_left {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main_header_left_content {
+    width: 100%;
+  }
+  .food_order_action {
+    width: 100%;
+  }
+  .food_order_price {
+    text-align: center;
+  }
+  .main_header_left p,
+  .main_header_left h1 {
+    width: 100%;
+  }
+  .main_header {
+    margin-top: 0;
+  }
+  .food_order_desktop {
+    display: none;
+  }
+  .food_order_deliver {
+    position: static;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .sale_item_left {
+    transform: scale(1);
+    right: -30px;
+  }
+  .footer_container {
+    padding: 2rem 0rem 2rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+  .footer_container_content {
+    grid-row: 2;
+    grid-column: 2 span;
+    justify-self: center;
+  }
+  .footer_container_content_logo {
+    margin-top: 1rem;
+  }
+  .search_location_container h4,
+  .search_location_container p {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .food_order_mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .food_order_price {
+    text-align: center;
+  }
+  .sale_item_left {
+    transform: scale(0.9);
+    right: 0;
+  }
+  .mobile_app {
+    max-width: 100%;
+    margin-top: 8rem;
+    border-radius: 500px 500px 0 0;
+  }
+  .content_mobile_app_btn {
+    justify-content: center;
+  }
+
+  .img_mobile_app {
+    transform: scale(1);
+    position: relative;
+    text-align: center;
+    grid-column: 2 span;
+    width: 100%;
+  }
+  .img_mobile_app img {
+    /* max-width: 350px; */
+    transform: none;
+    left: 0;
+    top: 12px;
+    /* position: relative; */
+  }
+  .content_mobile_app {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .content_mobile_app h4 {
+    font-size: 24px;
+    max-width: 100%;
+  }
+  .content_mobile_app h6 {
+    font-size: 20px;
+  }
+  .content_mobile_app p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .search_location_container h4 {
+    font-size: 20px;
+  }
+  .search_location_container p {
+    font-size: 12px;
+  }
+  .search_location_container form {
+    width: 140%;
+    height: 50px;
+  }
+  .search_location_container form button {
+    height: 60%;
+    top: 20%;
+    padding: 6px;
+  }
+  .search_location_container img {
+    max-width: 90px;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/App.css"></style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Modal/Modal.css">.modal_container {
+  width: 300px;
+  height: 100px;
+  background-color: grey;
+  margin: 0 auto;
+}
+.modal_container p {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 1rem;
+}
+
+.modal_Btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_btn {
+  text-align: center;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+  align-content: center;
+  height: 36px;
+  position: relative;
+  top: 12px;
+}
+.modal_btn_yes {
+  background-color: rgba(0, 128, 0, 0.582);
+}
+.modal_btn_no {
+  background-color: rgba(255, 0, 0, 0.541);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Header.css">.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Navigation/Navigation.css">.main_navigation {
+  display: grid;
+  grid-template-columns: 160px 620px 187px;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Navigation/NavBasket/NavBasket.css">.nav_logo_and_basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav_basket {
+  cursor: pointer;
+  position: relative;
+}
+.basket_count {
+  position: absolute;
+  background-color: var(--color-C90000);
+  opacity: 0.9;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  border-radius: 100%;
+  z-index: 1;
+  top: 5%;
+  left: 22%;
+  display: none;
+}
+.nav_basket svg {
+  width: 70%;
+}
+.nav_basket path {
+  fill: var(--color-7D7C7C);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Navigation/NavMenu/NavMenu.css">.nav_menu {
+  display: flex;
+  margin-left: -1.5rem;
+}
+.nav_menu_items {
+  display: inherit;
+  list-style: none;
+}
+.nav_menu_link {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--color-7D7C7C);
+  transition: all 70ms ease;
+  -webkit-transition: all 70ms ease;
+  -moz-transition: all 70ms ease;
+  -ms-transition: all 70ms ease;
+  -o-transition: all 70ms ease;
+}
+/* .nav_menu_item:nth-child(1) .nav_menu_link {
+    color: var(--color-C90000);
+  } */
+.nav_menu_link:hover {
+  color: var(--color-C90000);
+  font-weight: 600;
+  text-shadow: -1px -1px 2px var(--color-FFE252);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Navigation/NavBtn/NavBtn.css">.nav_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: "poppins";
+}
+.nav_btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins";
+  line-height: 24px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  width: 90px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid var(--color-C90000);
+  color: var(--color-C90000);
+}
+.nav_btn:nth-child(2) {
+  background-color: var(--color-C90000);
+  color: #fff;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Navigation/NavIcons/NavIcons.css">.nav_icons {
+  display: none;
+}
+.nav_icon,
+.nav_icon_close {
+  display: none;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Banner/Banner.css">.main_header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Banner/BannerLeftSection/BannerLeftSection.css">.main_header_left {
+  align-self: center;
+}
+.main_header_left h1 {
+  font-size: 3rem;
+  max-width: 100%;
+  color: var(--color-C90000);
+  font-weight: 600;
+  line-height: 72px;
+}
+.main_header_left p {
+  max-width: 100%;
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: var(--color-504F4F);
+  font-weight: 400;
+  line-height: 24px;
+}
+.food_order_price {
+  margin-bottom: 24px;
+}
+.food_order_price span {
+  font-size: 1rem;
+  color: var(--color-323232);
+  font-weight: 300;
+  line-height: 24px;
+}
+.food_order_price span:nth-child(2) {
+  font-size: 1.5rem;
+}
+.food_order_price span:nth-child(3) {
+  font-size: 1.5rem;
+}
+.food_order {
+  padding-top: 40px;
+}
+.food_order_action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 369px;
+  gap: 40px;
+}
+.food_order_action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins";
+  background-color: var(--color-FFC300);
+  padding: 16px 24px;
+  border-radius: 100px;
+  box-shadow: 0 20px 20px 0 rgba(112, 144, 176, 0.2);
+  border: none;
+  color: var(--color-323232);
+  gap: 12px;
+}
+.food_order_action_text {
+  font-size: 20px;
+}
+.food_order_quantity {
+  max-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 100px;
+  box-shadow: 0 17px 10px 0 rgba(112, 144, 176, 0.2);
+  border: 1px solid rgba(241, 241, 241, 0.7);
+  color: var(--color-323232);
+  gap: 12px;
+}
+.main_header_left_content {
+  margin-bottom: 40px;
+  width: 350px;
+}
+#user_input_number {
+  max-width: 80%;
+  padding: 0 16px;
+  font-size: 20px;
+  color: var(--color-FFC300);
+  border-left: 1px solid var(--color-F1F1F1);
+  border-right: 1px solid var(--color-F1F1F1);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Header/Banner/BannerRightSection/BannerRightSection.css">.main_header_right {
+  position: relative;
+  max-width: 703px;
+}
+.food_order_deliver {
+  top: 4rem;
+  left: -7.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  min-width: 163px;
+  border: 1px solid var(--color-F1F1F1);
+  background-color: rgba(241, 241, 241, 0.4);
+  color: var(--color-323232);
+  border-radius: 50px 50px 0 50px;
+}
+.food_order_deliver div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+}
+.food_order_deliver div:last-child {
+  color: var(--color-7D7C7C);
+  font-size: 1rem;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Main/Menu/Menu.css">.menu {
+  margin-top: 4rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Main/Menu/MenuTitle/MenuTitle.css">.menu_title {
+  position: relative;
+  width: max-content;
+}
+.menu_title h4 {
+  color: var(--color-C90000);
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.menu_title_shadow {
+  position: absolute;
+  width: 100%;
+  height: 9px;
+  z-index: -1;
+  top: 48px;
+  background-color: var(--color-FFF6A3);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Main/Menu/MenuItemSelector/MenuItemSelector.css">.menu_item_selector {
+  display: grid;
+  grid-auto-columns: 155px;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+.menu_item_selector_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 18px;
+  color: var(--color-504F4F);
+  background-color: var(--color-F1F1F1);
+  border-radius: 100px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-E3E3E3);
+  transition: all 250ms ease;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+}
+.menu_item_selector_svg {
+  z-index: 0;
+}
+.menu_item_selector button {
+  cursor: pointer;
+  z-index: 1;
+}
+.active {
+  background-color: var(--color-FFC300);
+  font-weight: 600;
+  color: var(--color-323232);
+  border: 1px solid var(--color-FFE252);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Main/Menu/MenuFoodsContainer/MenuFoodsContainer.css">.menu_foods_container {
+  margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: repeat(3, 370px); */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem 1.5rem;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/Main/Menu/MenuFoodsContainer/FoodContainer/FoodContainer.css">.discount_badge {
+  width: 48px;
+  position: absolute;
+}
+.menu_food_container {
+  min-width: 370px;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid var(--color-E3E3E3);
+  padding: 1rem;
+}
+.menu_food_img_bg {
+  position: absolute;
+  z-index: -1;
+  top: 80px;
+  background-color: #fffde6;
+  width: 100%;
+  height: 105px;
+  border-radius: 8px;
+  border: none;
+}
+.menu_food_img {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 188px;
+}
+.menu_food_img > img {
+  /* display: flex;
+      margin: 0 auto; */
+  max-width: 250px;
+  max-height: 190px;
+  object-fit: contain;
+}
+.menu_food_infos {
+  margin-top: 1.8rem;
+}
+.menu_food_infos h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-323232);
+  margin-bottom: 0.3rem;
+}
+.menu_food_infos p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-504F4F);
+  margin-bottom: 0.3rem;
+}
+.menu_food_infos_score {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.menu_food_infos_score span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-7D7C7C);
+}
+.menu_food_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+.menu_food_price_cost {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-323232);
+}
+.menu_food_price_order {
+  border: none;
+  background-color: var(--color-C90000);
+  padding: 10px;
+  border-radius: 8px;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/anour/Desktop/food_delivery_react/food_delivery/src/pages/login/Login.css">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.woff) format("woff");
+}
+body {
+  font-family: poppins;
+
+  /* padding-bottom: 10rem; */
+}
+.container {
+  width: 100%;
+  height: 1000px;
+  background-color: #c90000;
+}
+.login_container {
+  width: 500px;
+  height: 550px;
+  padding: 50px 35px 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.login {
+  position: relative;
+  margin-top: 1.5rem;
+}
+.login_logo {
+  text-align: center;
+}
+.login_logo img {
+  width: 100px;
+}
+
+.login svg {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 30px;
+  height: auto;
+}
+.login input {
+  background-color: transparent;
+  font-family: "poppins";
+  font-size: 20px;
+  font-weight: 300;
+  width: 100%;
+  height: 70px;
+  color: #fff;
+  padding: 0 4rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #fff;
+  outline: none;
+}
+.login input::placeholder {
+  color: #fff;
+}
+.login_container button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 1px 1px #000;
+  font-family: "poppins";
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.login_container p {
+  font-size: 1.5rem;
+  padding-top: 1.2rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  display: none;
+  text-align: center;
+}
+.login_container p span {
+  font-size: 0.8rem;
+  display: block;
+  padding-top: 1rem;
+}
+.message {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  display: block;
+  text-align: center;
+}
+.message a {
+  font-size: 1.2rem;
+  color: #ffe252;
+  margin-top: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+.toggle-password {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 25%;
+  right: 5%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+.toggle-password.active i.fa-eye {
+  display: none;
+}
+
+.toggle-password.active i.fa-eye-slash {
+  display: inline;
+}
+
+.toggle-password i.fa-eye-slash {
+  display: none;
+}
+.change_lang {
+  position: relative;
+  background-color: #ffe252;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.lang {
+  position: absolute;
+  text-align: center;
+  font-size: 0.9rem;
+  top: 11%;
+  padding: 0.1rem 0;
+  left: 5%;
+  border-radius: 7px;
+  background-color: #c90000;
+  color: #fff;
+  width: 48%;
+  transition: all 200ms ease-out;
+}
+</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1231.0" data-gr-ext-installed="">
+    <div id="root"><div></div></div>
+    <script type="module" src="./MAC Burger(React)_files/main.jsx"></script>
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false,&quot;isAlwaysAvailableAssistantEnabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
